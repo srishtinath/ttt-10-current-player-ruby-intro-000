@@ -3,11 +3,11 @@ def turn_count(board)
   board.each do |board_value|
     if board_value == "X" || board_value == "O"
       counter += 1
+      puts counter
     else
-      counter
+      puts counter
     end
   end
-  puts counter
 end
 
 def current_player(board)
@@ -15,5 +15,5 @@ def current_player(board)
     puts "X"
   else
     puts "O"
-  end 
+  end
 end
